@@ -1,7 +1,15 @@
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(189, 189, 189);
     color: rgb(0, 0, 0);
+}
+
+:root{
+    --color-primary:#5d5c61;
+    --color-links:#379683;
+    --color-bg-secondary:black;
 }
 
 body{
@@ -9,25 +17,25 @@ body{
 }
 
 header{
-    background-color: #5d5c61;
+    background-color: var(--color-primary);
 }
 
 h1 {
-    color: #379683;
-    background-color: #5d5c61;
+    color: var(--color-links);
+    background-color: var(--color-primary);
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
-    background-color: #5d5c61;
+    background-color: var(--color-primary);
 }
 
 nav a{
     text-decoration: none;
     padding: 8px 13px;
-    color: #379683;
-    background-color: #5d5c61;
+    color: var(--color-links);
+    background-color: var(--color-primary);
 
 }
 
@@ -68,7 +76,7 @@ p {
 }
 
 .contact address a {
-    color: #5d5c61;
+    color: var(--color-primary);
     padding: 5px;
     text-decoration: none;
     font-size: 1.3rem;
@@ -83,8 +91,8 @@ p {
   
 .contact address a:hover {
     background-size: 100% 88%;
-    color: #379683;
-    background-color: black;
+    color: var(--color-links);
+    background-color: var(--color-bg-secondary);
   }
 
 .contact address {
